@@ -165,7 +165,7 @@ codeunit 6140 "E-Doc. Import"
         exit(true);
     end;
 
-    internal procedure CreateFromType(var EDocument: Record "E-Document"; EDocumentService: Record "E-Document Service"; EDocFileFormat: Enum "E-Doc. File Format"; Filename: Text; InStr: InStream)
+    procedure CreateFromType(var EDocument: Record "E-Document"; EDocumentService: Record "E-Document Service"; EDocFileFormat: Enum "E-Doc. File Format"; Filename: Text; InStr: InStream)
     var
         EDocLog: Record "E-Document Log";
     begin
